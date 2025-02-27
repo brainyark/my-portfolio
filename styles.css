@@ -1,0 +1,74 @@
+/* Base styles */
+:root {
+  --blue-500: #3B82F6;
+  --purple-500: #8B5CF6;
+  --purple-600: #7C3AED;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter var', sans-serif;
+  background-color: black;
+  color: white;
+  line-height: 1.5;
+  cursor: none;
+}
+
+/* Utility classes */
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Navbar styles */
+.navbar {
+  transition: all 0.3s;
+  padding: 1.5rem 0;
+}
+
+.navbar.scrolled {
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(8px);
+  padding: 1rem 0;
+}
+
+.nav-link {
+  color: #9CA3AF;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: white;
+}
+
+/* Custom cursor */
+.custom-cursor {
+  width: 8px;
+  height: 8px;
+  background: #ff2d2d;
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  transition: width 0.3s cubic-bezier(0.23, 1, 0.32, 1),
+              height 0.3s cubic-bezier(0.23, 1, 0.32, 1),
+              border-radius 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+/* Continue with more styles... */ 
