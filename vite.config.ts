@@ -2,7 +2,7 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
 export default defineConfig({
-  base: "https://brainyark.github.io/my-portfolio/", // Ensure correct GitHub Pages base path
+  base: "/my-portfolio/", // Correct GitHub Pages base path
   plugins: [react()],
   optimizeDeps: {
     exclude: ['lucide-react'],
